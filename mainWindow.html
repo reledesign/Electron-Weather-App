@@ -2,33 +2,34 @@
 <html lang="en">
 <head>
   <title>Local Weather</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body onload="startTime()">
   <div class="header">
 
+<div id="clockbox"></div>
 
         <h1>Your Local Weather</h1>
       </div>
       <div class="status" id="animate-bottom">
-        <div id="loader" class=""></div>
-        <p id="weather-location" class="text-center weather"></p>
+
+        <p id="weather-location"></p>
 
 
-        <h2 id="temp" class="text-center"></h2>
+        <h2 id="temp"></h2>
 
-				<h3 id="description" class="text-center desc"></h3>
+				<h3 id="description" class="desc"></h3>
 
 				      <div class="row">
-        <h3 id="wind" class="text-center weather"></h3>
+        <h3 id="wind" class="weather"></h3>
 				</div>
 				      <div class="row">
         <h3 id="humidity"></h3>
 				</div>
         <div class="row">
-					<p id=temp-type class="text-center temp-type"><span id="celsfahr">°C/°F</span></p></div>
+					<p id=temp-type class="temp-type"><span id="celsfahr">°C/°F</span></p></div>
 
 				<div class="row">
 					<img src="http://reledesign.fi/images/rapa_simple2.svg" height="80" width="80" id="wicon" class="weather-icon"></img>
@@ -64,5 +65,7 @@
   </script>
 -->
 <script src="weatherapp.js"></script>
+<script src="addons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>

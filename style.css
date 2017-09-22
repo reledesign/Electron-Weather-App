@@ -11,12 +11,12 @@ body {
 	grid-column: 2;
 	grid-row: 2;
 	text-align: center;
-  
+
 
 }
 
 p.temp-type {
-  padding-top: 10px;
+  padding-top: 5px;
   cursor: pointer;
   color: #FFFFFF;
 }
@@ -24,12 +24,12 @@ p.temp-type {
 .status p {
   font-size: 1.8em;
   text-transform: capitalize;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .header {
-	margin-top: 30px;
- 	margin-bottom: 30px;
+	margin-top: 20px;
+ 	margin-bottom: 20px;
 	grid-column: 2;
 	text-align: center;
 	grid-row: 1;
@@ -42,12 +42,12 @@ p.temp-type {
 
 h1 {
 	font-size: 3rem;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 h2 {
 	font-size: 2.6rem;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 h3 {
@@ -63,4 +63,35 @@ h3.desc:first-letter {
 	background: #686868;
 	border-radius: 10px;
 	padding: 13px 15px 5px 5px;
+}
+
+@media screen and (max-width: 700px) {
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 5px;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-bottom:5px;
+  }
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  #weather-location {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  #celsfahr {
+  	display: inline-block;
+  	background: #686868;
+  	border-radius: 10px;
+  	padding: 13px 15px 5px 5px;
+    font-size: 1.3rem;
+  }
+}
+
+.clockbox {
+  grid-column: 1;
+  grid-row: 1;
 }

@@ -1,7 +1,7 @@
 // reloads page after 30min
-setTimeout(function(){
-   window.location.reload(1);
-}, 1800000);
+  setTimeout(function(){
+     window.location.reload(1);
+  }, 1800000 );
 //Variables for api and coordinates
   var api = "https://fcc-weather-api.glitch.me/api/current?lat=";
   var lat;
