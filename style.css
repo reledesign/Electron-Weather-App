@@ -1,0 +1,66 @@
+body {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3 1fr);
+  font-family: Rockwell, "Courier Bold", Courier, Georgia, 		Times, "Times New Roman", serif;
+  color: #fff;
+  background-color: #161616;
+}
+
+.status {
+	grid-column: 2;
+	grid-row: 2;
+	text-align: center;
+  
+
+}
+
+p.temp-type {
+  padding-top: 10px;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.status p {
+  font-size: 1.8em;
+  text-transform: capitalize;
+	margin-bottom: 10px;
+}
+
+.header {
+	margin-top: 30px;
+ 	margin-bottom: 30px;
+	grid-column: 2;
+	text-align: center;
+	grid-row: 1;
+}
+
+.weather-icon {
+	grid-column: 2;
+	grid-row: 3;
+}
+
+h1 {
+	font-size: 3rem;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 2.6rem;
+	margin-bottom: 10px;
+}
+
+h3 {
+	  font-size: 1.8em;
+
+	margin-bottom: 10px;
+}
+h3.desc:first-letter {
+	text-transform: uppercase;
+}
+#celsfahr {
+	display: inline-block;
+	background: #686868;
+	border-radius: 10px;
+	padding: 13px 15px 5px 5px;
+}

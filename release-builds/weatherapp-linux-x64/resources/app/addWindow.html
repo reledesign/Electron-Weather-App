@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Add Location</title>
+</head>
+<body>
+  <form>
+    <div>
+      <label>Enter Location</label>
+      <input type="text" id="location" autofocus>
+    </div>
+    <button type="submit">add Location</button>
+  </form>
+
+  <script>
+  const electron = require('electron');
+  const {ipcRenderer} = electron;
+
+  const form = document.querySelector('form');
+  form.addEventListener('submit', submitForm);
+
+  function submitForm(e){
+    e.preventDefault();
+    const location = document.querySelector('#location').value;
+    ipcRenderer.send('location:add', location);
+  }
+  </script>
+</body>
+</html>
